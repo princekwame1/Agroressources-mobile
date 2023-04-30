@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1006346901910",
+    "project_id": "agroressource-44db2",
+    "storage_bucket": "agroressource-44db2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006346901910:android:43d17e0e752a33765fe5b7",
+        "android_client_info": {
+          "package_name": "com.tiastgroup.agroressources"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006346901910-vfnhgh7hetk0ghnlh4pp6qor4rdef758.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tiastgroup.agroressources",
+            "certificate_hash": "75a3bb00d0cf7191c341bff426e91f4b9ab08fe5"
+          }
+        },
+        {
+          "client_id": "1006346901910-03iquko6f0gp75o50dqt0vpu9dmkblvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzHg9jE05F5Kp0BgMbcLyBd3f56bp2LJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006346901910-03iquko6f0gp75o50dqt0vpu9dmkblvp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006346901910-5d89n57vo5359ikfi1ivuh4a88qb9lqm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tiastgroup.agrorichessapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
