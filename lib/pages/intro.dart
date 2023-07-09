@@ -77,7 +77,7 @@ PageViewModel introPage (context, String title, String subtitle, String image){
             height: 3,
             width: 100,
             decoration: BoxDecoration(
-              color:Colors.red,
+              color:Colors.green,
               borderRadius: BorderRadius.circular(10)
             ),
           )

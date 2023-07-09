@@ -57,7 +57,7 @@ class _SearchPageState extends State<SearchPage> {
       ),
     ),
   ),
-        // title: _searchBar(),
+         title: _searchBar(),
       ),
       body: SafeArea(
         child: Column(
@@ -126,57 +126,57 @@ class _SearchPageState extends State<SearchPage> {
   //     ),
   //   );
   // }
-// Widget _searchBar() {
-//   return Container(
-//     width: MediaQuery.of(context).size.width,
-//     decoration: BoxDecoration(
-//       color: Theme.of(context).backgroundColor,
-//       borderRadius: BorderRadius.circular(30.0),
-//     ),
-//     child: SizedBox(
-//       width: MediaQuery.of(context).size.width * 50.0, // reduce width by 10%
-//       child: Padding(
-//         padding: EdgeInsets.symmetric(horizontal: 16.0),
-//         child: TextFormField(
-//           autofocus: true,
-//           controller: context.watch<SearchBloc>().textfieldCtrl,
-//           style: TextStyle(
-//             fontSize: 16, 
-//             fontWeight: FontWeight.w500,
-//           ),
-//           decoration: InputDecoration(
-//             border: InputBorder.none,
-//             hintText: "search news".tr(),
-//             hintStyle: TextStyle(
-//               fontSize: 16,
-//               fontWeight: FontWeight.w500,
-//               color: Theme.of(context).secondaryHeaderColor,
-//             ),
-//             suffixIcon: IconButton(
-//               icon: Icon(
-//                 Icons.close,
-//                 size: 25,
-//                 color: Theme.of(context).iconTheme.color,
-//               ),
-//               onPressed: () {
-//                 context.read<SearchBloc>().saerchInitialize();
-//               },
-//             ),
-//           ),
-//           textInputAction: TextInputAction.search,
-//           onFieldSubmitted: (value) {
-//             if (value == '') {
-//               openSnacbar(context, 'Type something!');
-//             } else {
-//               context.read<SearchBloc>().setSearchText(value);
-//               context.read<SearchBloc>().addToSearchList(value);
-//             }
-//           },
-//         ),
-//       ),
-//     ),
-//   );
-// }
+Widget _searchBar() {
+  return Container(
+    width: MediaQuery.of(context).size.width,
+    decoration: BoxDecoration(
+      color: Theme.of(context).backgroundColor,
+      borderRadius: BorderRadius.circular(30.0),
+    ),
+    child: SizedBox(
+      width: MediaQuery.of(context).size.width * 04.0, // reduce width by 10%
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        child: TextFormField(
+          autofocus: true,
+          controller: context.watch<SearchBloc>().textfieldCtrl,
+          style: TextStyle(
+            fontSize: 16, 
+            fontWeight: FontWeight.w500,
+          ),
+          decoration: InputDecoration(
+            border: InputBorder.none,
+            hintText: "search news".tr(),
+            hintStyle: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Theme.of(context).secondaryHeaderColor,
+            ),
+            suffixIcon: IconButton(
+              icon: Icon(
+                Icons.close,
+                size: 25,
+                color: Theme.of(context).iconTheme.color,
+              ),
+              onPressed: () {
+                context.read<SearchBloc>().saerchInitialize();
+              },
+            ),
+          ),
+          textInputAction: TextInputAction.search,
+          onFieldSubmitted: (value) {
+            if (value == '') {
+              openSnacbar(context, 'Type something!');
+            } else {
+              context.read<SearchBloc>().setSearchText(value);
+              context.read<SearchBloc>().addToSearchList(value);
+            }
+          },
+        ),
+      ),
+    ),
+  );
+}
 
 
 

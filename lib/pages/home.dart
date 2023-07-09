@@ -26,11 +26,11 @@ class _HomePageState extends State<HomePage> {
   List<IconData> iconList = [
     Feather.home,
     // Feather.youtube,
-    Feather.search,
+    // Feather.search,
     // Feather.mic,
     Feather.grid,
     Feather.book,
-    Feather.user
+    Feather.user,
   ];
 
   void onTabTapped(int index) {
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Explore(),
             // VideoArticles(),
-            SearchPage(),
+            // SearchPage(),
           Categories(),
             // Podcast(),
             Newsletter(),
@@ -118,21 +118,22 @@ class _HomePageState extends State<HomePage> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(iconList[0]), label: 'home'.tr()),
         // BottomNavigationBarItem(icon: Icon(iconList[1]), label: 'tv'.tr()),
-        BottomNavigationBarItem(icon: Icon(iconList[1]), label: 'Search'.tr()),
+        // BottomNavigationBarItem(icon: Icon(iconList[1]), label: 'Search'.tr()),
         // BottomNavigationBarItem(icon: Icon(iconList[2]), label: 'podcast'.tr()),
         BottomNavigationBarItem(
             icon: Icon(
-              iconList[2],
+              iconList[1],
               size: 25,
             ),
             label: 'categories'.tr()),
+
         BottomNavigationBarItem(
             icon: Icon(
-              iconList[3],
-              size: 25,
+              iconList[2],
+              size: 25
             ),
             label: 'newsletter'.tr()),
-        BottomNavigationBarItem(icon: Icon(iconList[4]), label: 'profile'.tr())
+        BottomNavigationBarItem(icon: Icon(iconList[3]), label: 'profile'.tr())
       ],
     );
   }

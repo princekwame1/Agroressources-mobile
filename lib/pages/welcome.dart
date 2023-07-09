@@ -240,14 +240,42 @@ class _WelcomePageState extends State<WelcomePage> {
         ],
       ),
       // backgroundColor: Theme.of(context).backgroundColor,
-          backgroundColor: Color.fromRGBO(121, 187, 91, 1),
+          // backgroundColor: Color.fromRGBO(121, 187, 91, 1),
 
                
             //  Color.fromRGBO(80, 159, 104, 1),
 
+
+//             Container(
+//   decoration: BoxDecoration(
+//     gradient: LinearGradient(
+//       begin: Alignment.topCenter,
+//       end: Alignment.bottomCenter,
+//       colors: [Colors.blueAccent, Colors.indigo],
+//     ),
+//   ),
+//   child: Column(
+//     crossAxisAlignment: CrossAxisAlignment.center,
+//     children: <Widget>[
+//       // The rest of your code here
+//       // ...
+//     ],
+//   ),
+// ),
+
+  //  Color.fromRGBO(121, 187, 91, 1),
+             
       body: Container(
+
         height: double.infinity,
         width: double.infinity,
+          decoration: BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [Color.fromRGBO(121, 187, 91, 1), Color.fromRGBO(80, 159, 104, 1),Color.fromRGBO(17, 97, 80, 1)],
+    ),
+  ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -257,7 +285,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image(
-                        image: AssetImage("assets/images/welcome.png"),
+                         image: AssetImage("assets/images/welcome.png"),
                         height: 130,
                       ),
                     SizedBox(height: 50,),

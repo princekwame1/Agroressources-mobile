@@ -6,6 +6,8 @@
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Agroressources</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -33,7 +35,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb5445148**************</string>
+				<string>fd9b01cb600fc955f81a911c549b3a508</string>
 				<string>ccom.googleusercontent.apps.1006346901910-5d89n57vo5359ikfi1ivuh4a88qb9lqm</string>
 			</array>
 		</dict>
@@ -45,7 +47,7 @@
 	<key>FacebookClientToken</key>
 	<string>d9b01cb600fc955f81a911c549b3a508</string>
 	<key>FacebookDisplayName</key>
-	<string>Agroriches</string>
+	<string>Agroressourses</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
 	<key>GADApplicationIdentifier</key>
@@ -105,7 +107,7 @@
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>LaunchScreen.storyboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UISupportedInterfaceOrientations</key>

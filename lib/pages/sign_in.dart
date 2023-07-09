@@ -130,7 +130,13 @@ class _SignInPageState extends State<SignInPage> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(
-                      hintText: 'username@mail.com', labelText: 'Email'),
+                      hintText: 'username@mail.com', labelText: 'Email' ,          border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.0),
+      borderSide: BorderSide(
+        color: Colors.grey,
+        width: 1.0,
+      ),
+    ),),
                   controller: emailCtrl,
                   keyboardType: TextInputType.emailAddress,
                   validator: (String? value) {
@@ -152,6 +158,13 @@ class _SignInPageState extends State<SignInPage> {
                   decoration: InputDecoration(
                     labelText: 'Password',
                     hintText: 'Enter Password',
+                               border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.0),
+      borderSide: BorderSide(
+        color: Colors.grey,
+        width: 1.0,
+      ),
+    ),
                     //prefixIcon: Icon(Icons.vpn_key),
                     suffixIcon: IconButton(
                         icon: lockIcon,
@@ -193,7 +206,8 @@ class _SignInPageState extends State<SignInPage> {
                   child: TextButton(
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.resolveWith(
-                              (states) => Theme.of(context).primaryColor)),
+                              (states) => Theme.of(context).primaryColor)
+                              ),
                       child: signInStart == false
                           ? Text('sign in',
                                   style: TextStyle(

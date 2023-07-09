@@ -14,9 +14,21 @@
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		A4D6BDC929FD7AF000E7382E /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = A4D6BDC829FD7AEF00E7382E /* GoogleService-Info (1).plist */; };
+		A4D6BDD12A01DDF700E7382E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D6BDD02A01DDF700E7382E /* NotificationService.swift */; };
+		A4D6BDD52A01DDF700E7382E /* Agroressources.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A4D6BDCE2A01DDF700E7382E /* Agroressources.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD4BA396A5CD2A4A1E970C42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C2DF4E9853BF89BBD55045A /* GoogleService-Info.plist */; };
 		E7B5853B6748C8C678D042A1 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788BA9B522561357EBBFF9D0 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4D6BDD32A01DDF700E7382E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D6BDCD2A01DDF700E7382E;
+			remoteInfo = Agroressources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -27,6 +39,17 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D6BDD62A01DDF700E7382E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4D6BDD52A01DDF700E7382E /* Agroressources.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -50,6 +73,9 @@
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4D6BDC829FD7AEF00E7382E /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		A4D6BDCE2A01DDF700E7382E /* Agroressources.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Agroressources.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D6BDD02A01DDF700E7382E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A4D6BDD22A01DDF700E7382E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35C67AB268BB2D700E5252E /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		E4A06074460A497DA14E6CE1 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +86,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B5853B6748C8C678D042A1 /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D6BDCB2A01DDF700E7382E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +134,7 @@
 				A4D6BDC829FD7AEF00E7382E /* GoogleService-Info (1).plist */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				A4D6BDCF2A01DDF700E7382E /* Agroressources */,
 				97C146EF1CF9000F007C117D /* Products */,
 				91B5D06D3F79F03EB86AA886 /* Pods */,
 				8C52C4601CAA0246F30E109B /* Frameworks */,
@@ -112,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				A4D6BDCE2A01DDF700E7382E /* Agroressources.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +167,15 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		A4D6BDCF2A01DDF700E7382E /* Agroressources */ = {
+			isa = PBXGroup;
+			children = (
+				A4D6BDD02A01DDF700E7382E /* NotificationService.swift */,
+				A4D6BDD22A01DDF700E7382E /* Info.plist */,
+			);
+			path = Agroressources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,15 +191,34 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				A2F54E7BA7D71E4727A07ECE /* [CP] Embed Pods Frameworks */,
+				A4D6BDD62A01DDF700E7382E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A4D6BDD42A01DDF700E7382E /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A4D6BDCD2A01DDF700E7382E /* Agroressources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D6BDDA2A01DDF700E7382E /* Build configuration list for PBXNativeTarget "Agroressources" */;
+			buildPhases = (
+				A4D6BDCA2A01DDF700E7382E /* Sources */,
+				A4D6BDCB2A01DDF700E7382E /* Frameworks */,
+				A4D6BDCC2A01DDF700E7382E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Agroressources;
+			productName = Agroressources;
+			productReference = A4D6BDCE2A01DDF700E7382E /* Agroressources.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -164,12 +227,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					A4D6BDCD2A01DDF700E7382E = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -187,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				A4D6BDCD2A01DDF700E7382E /* Agroressources */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +270,13 @@
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 				DD4BA396A5CD2A4A1E970C42 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D6BDCC2A01DDF700E7382E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +364,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4D6BDCA2A01DDF700E7382E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D6BDD12A01DDF700E7382E /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4D6BDD42A01DDF700E7382E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D6BDCD2A01DDF700E7382E /* Agroressources */;
+			targetProxy = A4D6BDD32A01DDF700E7382E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -366,7 +457,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -506,7 +599,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -538,7 +633,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -565,6 +662,111 @@
 			};
 			name = Release;
 		};
+		A4D6BDD72A01DDF700E7382E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GUL638ZM9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Agroressources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Agroressources;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiastgroup.agroressources.Agroressources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4D6BDD82A01DDF700E7382E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GUL638ZM9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Agroressources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Agroressources;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiastgroup.agroressources.Agroressources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4D6BDD92A01DDF700E7382E /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GUL638ZM9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Agroressources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Agroressources;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiastgroup.agroressources.Agroressources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,6 +786,16 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D6BDDA2A01DDF700E7382E /* Build configuration list for PBXNativeTarget "Agroressources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D6BDD72A01DDF700E7382E /* Debug */,
+				A4D6BDD82A01DDF700E7382E /* Release */,
+				A4D6BDD92A01DDF700E7382E /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

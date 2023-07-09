@@ -216,50 +216,50 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                                         SizedBox(
                                           width: 20,
                                         ),
-                                        isSpeaking
-                                            ? Icon(CupertinoIcons.pause,
-                                                size: 18, color: Colors.grey)
-                                            : Icon(CupertinoIcons.play,
-                                                size: 18, color: Colors.grey),
-                                        SizedBox(
-                                          width: 5,
-                                        ),
-                                        isSpeaking
-                                            ? GestureDetector(
-                                                onTap: () {
-                                                  setState(() {
-                                                    isSpeaking = !isSpeaking;
-                                                  });
-                                                  try {
-                                                    tts.pause();
-                                                  } on Exception catch (e) {
-                                                    tts.stop();
-                                                  }
-                                                },
-                                                child: Text(
-                                                  "Pause",
-                                                  style: TextStyle(
-                                                      color: Theme.of(context)
-                                                          .secondaryHeaderColor,
-                                                      fontSize: 12),
-                                                ),
-                                              )
-                                            : GestureDetector(
-                                                onTap: () async {
-                                                  tts.speak(bodyAndTitle);
+                                        // isSpeaking
+                                        //     ? Icon(CupertinoIcons.pause,
+                                        //         size: 18, color: Colors.grey)
+                                        //     : Icon(CupertinoIcons.play,
+                                        //         size: 18, color: Colors.grey),
+                                        // SizedBox(
+                                        //   width: 5,
+                                        // ),
+                                        // isSpeaking
+                                        //     ? GestureDetector(
+                                        //         onTap: () {
+                                        //           setState(() {
+                                        //             isSpeaking = !isSpeaking;
+                                        //           });
+                                        //           try {
+                                        //             tts.pause();
+                                        //           } on Exception catch (e) {
+                                        //             tts.stop();
+                                        //           }
+                                        //         },
+                                        //         child: Text(
+                                        //           "Pause",
+                                        //           style: TextStyle(
+                                        //               color: Theme.of(context)
+                                        //                   .secondaryHeaderColor,
+                                        //               fontSize: 12),
+                                        //         ),
+                                        //       )
+                                            // : GestureDetector(
+                                            //     onTap: () async {
+                                            //       tts.speak(bodyAndTitle);
 
-                                                  setState(() {
-                                                    isSpeaking = true;
-                                                  });
-                                                },
-                                                child: Text(
-                                                  "Play",
-                                                  style: TextStyle(
-                                                      color: Theme.of(context)
-                                                          .secondaryHeaderColor,
-                                                      fontSize: 12),
-                                                ),
-                                              )
+                                            //       setState(() {
+                                            //         isSpeaking = true;
+                                            //       });
+                                            //     },
+                                            //     child: Text(
+                                            //       "Play",
+                                            //       style: TextStyle(
+                                            //           color: Theme.of(context)
+                                            //               .secondaryHeaderColor,
+                                            //           fontSize: 12),
+                                            //     ),
+                                            //   )
                                       ],
                                     ),
                                     SizedBox(
@@ -287,8 +287,7 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                                                     left: 10, right: 10)),
                                         backgroundColor:
                                             MaterialStateProperty.resolveWith(
-                                                (states) => Theme.of(context)
-                                                    .primaryColor),
+                                                (states) => Colors.green),
                                         shape:
                                             MaterialStateProperty.resolveWith(
                                                 (states) =>

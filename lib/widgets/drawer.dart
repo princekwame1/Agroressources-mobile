@@ -57,7 +57,8 @@ class DrawerMenu extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  AppName(fontSize: 25.0),
+                            Image(image: AssetImage('assets/images/image1.jpg'), width: 130.0),
+
                       Text('Version: ${sb.appVersion}', style: TextStyle(
                         fontSize: 13, color: Colors.grey[600]
                       ),)
@@ -101,7 +102,8 @@ class DrawerMenu extends StatelessWidget {
                         AppService().openEmailSupport(context);
                       }else if(index == 5){
                         AppService().openLink(context, Config.facebookPageUrl);
-                      }else if(index == 6){
+                      }
+                      else if(index == 6){
                         AppService().openLink(context, Config.youtubeChannelUrl);
                       }else if(index == 7){
                         AppService().openLink(context, Config.twitterUrl);

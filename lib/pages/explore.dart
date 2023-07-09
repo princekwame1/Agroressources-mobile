@@ -160,7 +160,7 @@ class _ExploreState extends State<Explore>
               indicator: MD2Indicator(
                 //it begins here
                 indicatorHeight: 3,
-                indicatorColor: Colors.white,
+                indicatorColor: Color.fromRGBO(189, 191, 17, 1),
                 indicatorSize: MD2IndicatorSize.normal,
               ),
               tabs: _tabs,

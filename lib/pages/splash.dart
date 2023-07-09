@@ -84,6 +84,13 @@ Widget build(BuildContext context) {
   return Scaffold(
     backgroundColor: const Color.fromARGB(255, 9, 75, 45),
     body: Container(
+              decoration: BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [Color.fromRGBO(121, 187, 91, 1), Color.fromRGBO(80, 159, 104, 1),Color.fromRGBO(17, 97, 80, 1)],
+    ),
+  ),
       child: Stack(
         children: <Widget>[
           Align(
@@ -117,7 +124,7 @@ Widget build(BuildContext context) {
                 'Powered by Tiastgroup',
                 style: TextStyle(
                   fontSize: 14.0,
-                  color: Colors.grey,
+                  color: Colors.white,
                 ),
               ),
             ),

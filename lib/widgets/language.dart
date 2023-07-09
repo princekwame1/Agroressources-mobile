@@ -17,7 +17,32 @@ class _LanguagePopupState extends State<LanguagePopup> {
     
     return Scaffold(
       appBar: AppBar(
-        title: Text('select language').tr(),
+         flexibleSpace: FlexibleSpaceBar(
+    background: Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors:[
+            Color.fromARGB(255, 9, 75, 45),
+            //  Color.fromARGB(255, 9, 75, 45),
+              Color.fromRGBO(80, 159, 104, 1),
+              //  Color.fromRGBO(121, 187, 91, 1),
+                  Color.fromRGBO(121, 187, 91, 1),
+               Color.fromRGBO(121, 187, 91, 1),
+             Color.fromRGBO(80, 159, 104, 1),
+
+              //  Color(1C7947),
+              Color(0xff5f6368)
+          ],
+          transform:GradientRotation(90)
+          // begin: Alignment.topCenter,
+          // end: Alignment.bottomCenter,
+          // colors: [Colors.green, Colors.purple], // replace with your own colors
+        ),
+      ),
+    ),
+  ),
+    
+        title: Text('select language',style:TextStyle(color:Colors.white)).tr(),
       ),
       body : ListView.builder(
         padding: EdgeInsets.all(10),

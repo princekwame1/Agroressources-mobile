@@ -145,26 +145,32 @@ class _SignUpPageState extends State<SignUpPage> {
                 SizedBox(
                   height: 60,
                 ),
-                
-                
-                TextFormField(
-                  controller: nameCtrl,
-                  keyboardType: TextInputType.text,
-                  decoration: InputDecoration(
-                    labelText: 'Name',
-                    hintText: 'Enter Name',
-                    //prefixIcon: Icon(Icons.person)
-                  ),
-                  validator: (String? value){
-                    if (value!.length == 0) return "Name can't be empty";
-                    return null;
-                  },
-                  onChanged: (String value){
-                    setState(() {
-                      name = value;
-                    });
-                  },
-                ),
+               TextFormField(
+  controller: nameCtrl,
+  keyboardType: TextInputType.text,
+  decoration: InputDecoration(
+    labelText: 'Name',
+    hintText: 'Enter Name',
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.0),
+      borderSide: BorderSide(
+        color: Color.fromRGBO(121, 187, 91, 1),
+        width: 1.0,
+      ),
+    ),
+    //prefixIcon: Icon(Icons.person)
+  ),
+  validator: (String? value){
+    if (value!.length == 0) return "Name can't be empty";
+    return null;
+  },
+  onChanged: (String value){
+    setState(() {
+      name = value;
+    });
+  },
+),
+
 
                 SizedBox(height: 20,),
 
@@ -173,7 +179,13 @@ class _SignUpPageState extends State<SignUpPage> {
                   decoration: InputDecoration(
                     hintText: 'username@mail.com',
                     labelText: 'Email Address',
-                  
+                  border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.0),
+      borderSide: BorderSide(
+        color: Color.fromRGBO(121, 187, 91, 1),
+        width: 1.0,
+      ),
+    ),
                     
                   ),
                   controller: emailCtrl,
@@ -196,6 +208,13 @@ class _SignUpPageState extends State<SignUpPage> {
                   decoration: InputDecoration(
                     labelText: 'Password',
                     hintText: 'Enter Password',
+                    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.0),
+      borderSide: BorderSide(
+        color: Color.fromRGBO(121, 187, 91, 1),
+        width: 1.0,
+      ),
+    ),
                     suffixIcon: IconButton(icon: lockIcon, onPressed: (){
                       lockPressed();
                     }),
